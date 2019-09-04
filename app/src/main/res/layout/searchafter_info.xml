@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.ContentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".saoactivity.SearchAfterActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:id="@+id/mianrela"
+        android:layout_height="50dp"
+        android:background="#3F51B5"
+
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/llLeftGoBack"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp" >
+
+            <TextView
+                android:id="@+id/toOnback"
+                android:background="@drawable/selector_capture_back"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:clickable="false"
+                android:drawablePadding="5dp"
+                android:focusable="false"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCenterTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/llLeftGoBack"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="搜索详情"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="200dp"
+        android:layout_height="match_parent" >
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/myTableLayout"
+            android:layout_alignLeft="@+id/myTableLayout"
+            android:layout_alignTop="@+id/myTableLayout"
+            android:background="#000000" />
+        <!-- 右边框 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/myTableLayout"
+            android:layout_alignRight="@+id/myTableLayout"
+            android:layout_alignTop="@+id/myTableLayout"
+            android:background="#000000" />
+        <!-- 上边框 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@+id/myTableLayout"
+            android:layout_alignRight="@+id/myTableLayout"
+            android:layout_alignTop="@+id/myTableLayout"
+            android:background="#000000" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/myTableLayout"
+            android:layout_alignLeft="@+id/myTableLayout"
+            android:layout_alignRight="@+id/myTableLayout"
+            android:background="#000000" />
+        <TableLayout
+            android:id="@+id/myTableLayout"
+            android:layout_width="600dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginTop="72dp"
+            android:layout_height="wrap_content"
+            >
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:text="岗位名称" />
+                <!-- 列分割线 -->
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" >
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                        <TextView
+                            android:id="@+id/deptName"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textSize="25dp"
+                            android:text="" />
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:text="岗位编码" />
+                <!-- 列分割线 -->
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5">
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/onCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textSize="25dp"
+                            android:text="" />
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:text="责任单位" />
+                <!-- 列分割线 -->
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" >
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                        <TextView
+                            android:id="@+id/onDuty"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textSize="25dp"
+                            android:text="" />
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:text="责任人" />
+                <!-- 列分割线 -->
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" >
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/onPer"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textSize="25dp"
+                            android:text="" />
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+            <!-- 行分割线 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:text="联系电话" />
+                <!-- 列分割线 -->
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" >
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                        <TextView
+                            android:id="@+id/onTel"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textSize="25dp"
+                            android:text="" />
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+            <!-- 行分割线 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="65dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:text="岗位描述" />
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" >
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                        <TextView
+                            android:id="@+id/onDesc"
+                            android:layout_width="290dp"
+                            android:layout_height="65dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textSize="12dp"
+                            android:text="" />
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="140dp"
+         android:rowCount="2"
+        android:columnCount="3">
+        <!--6行4列
+        实现占满整个屏幕-->
+        <!--跨四列 自动填充 权重2-->
+         <LinearLayout
+             android:layout_marginLeft="50dp"
+             android:layout_width="140dp"
+             android:layout_height="100dp">
+
+             <ImageView
+                 android:id="@+id/iotable"
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:layout_gravity="center"
+                 android:background="@drawable/member_01"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="I/O表"
+                 android:layout_gravity="center"
+                 android:layout_marginTop="40dp"
+                 android:layout_marginLeft="-40dp"
+                 android:textSize="12dp"/>
+         </LinearLayout>
+         <LinearLayout
+             android:layout_marginLeft="50dp"
+             android:layout_width="140dp"
+             android:layout_height="100dp">
+             <ImageView
+                 android:id="@+id/wangluotuopu"
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:layout_gravity="center"
+                 android:layout_marginLeft="10dp"
+                 android:background="@drawable/member_02"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="网络拓扑图"
+                 android:layout_gravity="center"
+                 android:layout_marginTop="40dp"
+                 android:layout_marginLeft="-55dp"
+                 android:textSize="12dp"
+                 />
+         </LinearLayout>
+         <LinearLayout
+             android:layout_marginLeft="50dp"
+             android:layout_width="140dp"
+             android:layout_height="100dp">
+             <ImageView
+                 android:id="@+id/gongdian"
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:layout_gravity="center"
+                 android:background="@drawable/member_03"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="供电图"
+                 android:layout_gravity="center"
+                 android:layout_marginTop="40dp"
+                 android:layout_marginLeft="-40dp"
+                 android:textSize="12dp"
+                 />
+         </LinearLayout>
+         <LinearLayout
+             android:layout_marginLeft="50dp"
+             android:layout_width="140dp"
+             android:layout_height="100dp">
+             <ImageView
+                 android:id="@+id/pitu"
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:layout_gravity="center"
+                 android:background="@drawable/member_04"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="P&amp;I图"
+                 android:layout_gravity="center"
+                 android:layout_marginTop="40dp"
+                 android:layout_marginLeft="-40dp"
+                 android:textSize="12dp"
+                 />
+         </LinearLayout>
+         <LinearLayout
+             android:layout_marginLeft="50dp"
+             android:layout_width="140dp"
+             android:layout_height="100dp">
+             <ImageView
+                 android:id="@+id/opengongyi"
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:layout_gravity="center"
+                 android:layout_marginLeft="10dp"
+                 android:background="@drawable/member_05"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="工艺流程图"
+                 android:layout_gravity="center"
+                 android:layout_marginTop="40dp"
+                 android:layout_marginLeft="-60dp"
+                 android:textSize="12dp"
+                 />
+         </LinearLayout>
+         <LinearLayout
+             android:layout_marginLeft="50dp"
+             android:layout_width="140dp"
+             android:layout_height="100dp">
+             <ImageView
+                 android:id="@+id/daiding"
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:layout_gravity="center"
+                 android:layout_marginLeft="10dp"
+                 android:background="@drawable/member_06"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="关键联锁点一览表"
+                 android:layout_marginTop="40dp"
+                 android:layout_marginLeft="-55dp"
+                 android:layout_gravity="center"
+                 android:textSize="8dp"
+                 />
+         </LinearLayout>
+    </GridLayout>
+</android.support.v7.widget.ContentFrameLayout>

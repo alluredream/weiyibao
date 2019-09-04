@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3F51B5"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/llLeftGoBack"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp" >
+
+            <TextView
+                android:id="@+id/toOnback"
+                android:background="@drawable/selector_capture_back"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:clickable="false"
+                android:drawablePadding="5dp"
+                android:focusable="false"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCenterTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/llLeftGoBack"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="扫码详情"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="600dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginTop="72dp"
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:stretchColumns="0,1,2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="38dp"
+                android:layout_margin="0.5dp"
+                android:background="#ffffffff"
+                android:text="岗位名称"
+                android:textSize="48px"
+                android:textColor="@color/black"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/onName"
+                android:layout_width="290dp"
+                android:layout_height="38dp"
+                android:layout_margin="0.5dp"
+                android:background="#ffffffff"
+                android:text=""
+                android:textSize="48px"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_margin="0.5dp"
+                android:background="#ffffffff"
+                android:text="岗位编码"
+                android:textSize="48px"
+                android:textColor="@color/black"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/onCode"
+                android:layout_width="290dp"
+                android:layout_height="35dp"
+                android:layout_margin="0.5dp"
+                android:background="#ffffffff"
+                android:text=""
+                android:textSize="48px"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_margin="0.5dp"
+                android:background="#ffffffff"
+                android:text="责任单位"
+                android:textSize="48px"
+                android:textColor="@color/black"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/onDuty"
+                android:layout_width="290dp"
+                android:layout_height="35dp"
+                android:layout_margin="0.5dp"
+                android:background="#ffffffff"
+                android:text=""
+                android:textSize="48px"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_margin="0.5dp"
+                android:background="#ffffffff"
+                android:text="责任人"
+                android:textSize="48px"
+                android:textColor="@color/black"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/onPer"
+                android:layout_width="290dp"
+                android:layout_height="35dp"
+                android:layout_margin="0.5dp"
+                android:background="#ffffffff"
+                android:text=""
+                android:textSize="48px"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_margin="0.5dp"
+                android:background="#ffffffff"
+                android:text="联系电话"
+                android:textSize="48px"
+                android:textColor="@color/black"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/onTel"
+                android:layout_width="290dp"
+                android:layout_height="35dp"
+                android:layout_margin="0.5dp"
+                android:background="#ffffffff"
+                android:text=""
+                android:textSize="48px"
+                android:textAlignment="center" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_margin="0.5dp"
+                android:background="#ffffffff"
+                android:text="岗位描述"
+                android:textSize="48px"
+                android:textColor="@color/black"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/onDesc"
+                android:layout_width="290dp"
+                android:layout_height="35dp"
+                android:layout_margin="0.5dp"
+                android:background="#ffffffff"
+                android:text=""
+                android:textSize="48px"
+                android:textAlignment="center" />
+        </TableRow>
+    </TableLayout>
+
+    <android.support.v7.widget.ContentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="290dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/member_01" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="160dp"
+                android:background="@drawable/member_02" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="160dp"
+                android:background="@drawable/member_03" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="345dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:text="I/O表"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="173dp"
+                android:text="网络拓扑图"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="160dp"
+                android:text="供电图"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="400dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/member_04" />
+
+            <ImageView
+                android:id="@+id/opengongyi"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="160dp"
+                android:background="@drawable/member_05" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="160dp"
+                android:background="@drawable/member_06" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="460dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:text="P&amp;I图"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/gongyitu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="173dp"
+                android:text="工艺流程图"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="160dp"
+                android:text="待定"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+    </android.support.v7.widget.ContentFrameLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_person"
+            android:title="" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_date_range"
+            android:title="Gallery" />
+        <!--<item-->
+            <!--android:id="@+id/nav_slideshow"-->
+            <!--android:icon=" "-->
+            <!--android:title="Slideshow" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_manage"-->
+            <!--android:icon=" "-->
+            <!--android:title="Tools" />-->
+    </group>
+
+    <item android:title="功能">
+        <menu>
+            <!--<item
+                android:id="@+id/nav_share"
+                android:icon=" "
+                android:title="Share" />-->
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_menu_exit"
+                android:title="退出登陆"/>
+        </menu>
+    </item>
+</menu>
